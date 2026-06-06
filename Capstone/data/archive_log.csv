@@ -1,0 +1,6 @@
+document_name,received_at,classification,confidence_score,reasoning,detected_language,archived_at
+bw_doc_4.pdf,2026-05-30T19:38:08.635154,irrelevant,1.0,The document is empty and does not contain any text.,unknown,2026-05-30T19:38:09.574460
+notice_4.pdf,2026-05-30T19:49:07.435062,irrelevant,1.0,The document is empty and does not contain any text.,unknown,2026-05-30T19:49:08.121673
+notice_2.pdf,2026-06-05T09:42:26.921790,irrelevant,1.0,The document is empty and does not contain any text.,unknown,2026-06-05T09:42:27.710064
+bw_doc_3.pdf,2026-06-06T06:35:17.929710,irrelevant,0.95,"The document is a request for document production for a compliance audit, which has no relation to a Cease & Desist request, as it does not ask to stop any direct communication with a customer.",en,2026-06-06T06:35:21.888383
+bw_doc_4.pdf,2026-06-06T06:35:43.486367,irrelevant,0.95,The document is a request for information and guidance on guardianship arrangements and has no mention of stopping communication or ceasing contact.,en,2026-06-06T06:35:47.096625

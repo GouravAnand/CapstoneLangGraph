@@ -1,0 +1,225 @@
+2026-05-30 22:48:54 | INFO | Extracting text from: LoA1.pdf
+2026-05-30 22:48:54 | INFO | Classifying document: LoA1.pdf
+2026-05-30 22:48:58 | ERROR | Classifier LLM error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-05-30 22:48:58 | INFO | Reviewer agent running
+2026-05-30 22:49:01 | ERROR | Reviewer agent error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-05-30 22:49:33 | INFO | Extracting text from: LOA3.pdf
+2026-05-30 22:49:34 | INFO | Classifying document: LOA3.pdf
+2026-05-30 22:49:36 | ERROR | Classifier LLM error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-05-30 22:49:36 | INFO | Reviewer agent running
+2026-05-30 22:49:39 | ERROR | Reviewer agent error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-05-30 23:15:00 | INFO | Extracting text from: LoA1.pdf
+2026-05-30 23:15:00 | INFO | Classifying document: LoA1.pdf
+2026-05-30 23:15:01 | ERROR | Classifier LLM error: Error calling model 'gemini-1.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-05-30 23:15:01 | INFO | Reviewer agent running
+2026-05-30 23:15:01 | ERROR | Reviewer agent error: Error calling model 'gemini-1.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-05-30 23:17:36 | INFO | Extracting text from: LoA1.pdf
+2026-05-30 23:17:36 | INFO | Classifying document: LoA1.pdf
+2026-05-30 23:17:39 | INFO | Classification: cease (confidence=0.98)
+2026-05-30 23:17:39 | INFO | Reviewer agent running
+2026-05-30 23:17:44 | INFO | CeaseAgent processing: LoA1.pdf
+2026-05-30 23:17:44 | INFO | DB record created: id=1 doc=LoA1.pdf
+2026-05-30 23:17:44 | SUCCESS | Cease record saved. DB id=1
+2026-05-30 23:17:44 | INFO | AuditAgent logging: LoA1.pdf
+2026-05-30 23:17:44 | INFO | AUDIT | {"timestamp": "2026-05-30T17:47:44.881224", "document_name": "LoA1.pdf", "classification": "cease", "confidence_score": 0.98, "reasoning": "The document explicitly states 'Cease and desist all communications regarding this account' and instructs the recipient not to contact the sender by any mode, directing all future communication to their legal representative.", "detected_language": "en", "human_decision": null, "review_notes": "The classification 'cease' is correct. The document explicitly requests cessation of direct communication and directs all future communication to a legal representative. The confidence score is high, and the key phrases are accurately identified despite some minor OCR artifacts in the text snippet.", "error": ""}
+2026-05-30 23:22:15 | INFO | Extracting text from: LOA4.pdf
+2026-05-30 23:22:15 | INFO | Classifying document: LOA4.pdf
+2026-05-30 23:22:18 | INFO | Classification: cease (confidence=0.99)
+2026-05-30 23:22:18 | INFO | Reviewer agent running
+2026-05-30 23:24:54 | INFO | Extracting text from: LOA4.pdf
+2026-05-30 23:24:54 | INFO | Classifying document: LOA4.pdf
+2026-05-30 23:24:57 | INFO | Classification: cease (confidence=0.99)
+2026-05-30 23:24:57 | INFO | Reviewer agent running
+2026-05-30 23:26:08 | INFO | Extracting text from: LoA1.pdf
+2026-05-30 23:26:08 | INFO | Classifying document: LoA1.pdf
+2026-05-30 23:26:11 | INFO | Classification: cease (confidence=0.98)
+2026-05-30 23:26:11 | INFO | Reviewer agent running
+2026-05-31 00:42:16 | INFO | Extracting text from: LOA4.pdf
+2026-05-31 00:42:17 | INFO | Classifying document: LOA4.pdf
+2026-05-31 00:42:18 | INFO | Classification: cease (confidence=0.98)
+2026-05-31 00:42:18 | INFO | Reviewer agent running
+2026-05-31 00:42:19 | INFO | CeaseAgent processing: LOA4.pdf
+2026-05-31 00:42:19 | INFO | DB record created: id=2 doc=LOA4.pdf
+2026-05-31 00:42:19 | SUCCESS | Cease record saved. DB id=2
+2026-05-31 00:42:19 | INFO | AuditAgent logging: LOA4.pdf
+2026-05-31 00:42:19 | INFO | AUDIT | {"timestamp": "2026-05-30T19:12:19.327016", "document_name": "LOA4.pdf", "classification": "cease", "confidence_score": 0.98, "reasoning": "The document explicitly states 'Cease and desist all communications regarding this account' and instructs to direct all communications to the appointed agent, indicating a clear intent to stop direct communication.", "detected_language": "en", "human_decision": null, "review_notes": "The classification as 'cease' is correct with a high confidence score of 0.98. The document explicitly states 'Cease and desist all communications regarding this account' and provides clear instructions to direct all communications to the appointed agent, supporting the classification.", "error": ""}
+2026-05-31 01:08:08 | INFO | Extracting text from: bw_doc_4.pdf
+2026-05-31 01:08:08 | INFO | Falling back to OCR for scanned document
+2026-05-31 01:08:08 | ERROR | OCR failed: Unable to get page count. Is poppler installed and in PATH?
+2026-05-31 01:08:08 | INFO | Classifying document: bw_doc_4.pdf
+2026-05-31 01:08:09 | INFO | Classification: irrelevant (confidence=1.00)
+2026-05-31 01:08:09 | INFO | Reviewer agent running
+2026-05-31 01:08:09 | INFO | ArchiveAgent processing: bw_doc_4.pdf
+2026-05-31 01:08:09 | INFO | Archived irrelevant doc: bw_doc_4.pdf
+2026-05-31 01:08:09 | SUCCESS | Archived: bw_doc_4.pdf
+2026-05-31 01:08:09 | INFO | AuditAgent logging: bw_doc_4.pdf
+2026-05-31 01:08:09 | INFO | AUDIT | {"timestamp": "2026-05-30T19:38:09.582623", "document_name": "bw_doc_4.pdf", "classification": "irrelevant", "confidence_score": 1.0, "reasoning": "The document is empty and does not contain any text.", "detected_language": "unknown", "human_decision": null, "review_notes": "", "error": ""}
+2026-05-31 01:19:07 | INFO | Extracting text from: notice_4.pdf
+2026-05-31 01:19:07 | INFO | Falling back to OCR for scanned document
+2026-05-31 01:19:07 | ERROR | OCR failed: Unable to get page count. Is poppler installed and in PATH?
+2026-05-31 01:19:07 | INFO | Classifying document: notice_4.pdf
+2026-05-31 01:19:07 | INFO | Classification: irrelevant (confidence=1.00)
+2026-05-31 01:19:07 | INFO | Reviewer agent running
+2026-05-31 01:19:08 | INFO | ArchiveAgent processing: notice_4.pdf
+2026-05-31 01:19:08 | INFO | Archived irrelevant doc: notice_4.pdf
+2026-05-31 01:19:08 | SUCCESS | Archived: notice_4.pdf
+2026-05-31 01:19:08 | INFO | AuditAgent logging: notice_4.pdf
+2026-05-31 01:19:08 | INFO | AUDIT | {"timestamp": "2026-05-30T19:49:08.128236", "document_name": "notice_4.pdf", "classification": "irrelevant", "confidence_score": 1.0, "reasoning": "The document is empty and does not contain any text.", "detected_language": "unknown", "human_decision": null, "review_notes": "", "error": ""}
+2026-05-31 01:19:42 | INFO | Extracting text from: LOA7.pdf
+2026-05-31 01:19:45 | INFO | Classifying document: LOA7.pdf
+2026-05-31 01:19:46 | INFO | Classification: cease (confidence=0.95)
+2026-05-31 01:19:46 | INFO | Reviewer agent running
+2026-05-31 01:19:46 | INFO | CeaseAgent processing: LOA7.pdf
+2026-05-31 01:19:46 | INFO | DB record created: id=3 doc=LOA7.pdf
+2026-05-31 01:19:46 | SUCCESS | Cease record saved. DB id=3
+2026-05-31 01:19:46 | INFO | AuditAgent logging: LOA7.pdf
+2026-05-31 01:19:46 | INFO | AUDIT | {"timestamp": "2026-05-30T19:49:46.696211", "document_name": "LOA7.pdf", "classification": "cease", "confidence_score": 0.95, "reasoning": "The document contains a clear instruction to 'cesar y desistir de contactarme' (cease and desist from contacting me) by any means of communication, which is a strong indication of a Cease & Desist request.", "detected_language": "es", "human_decision": null, "review_notes": "The classification as 'cease' is correct, with a confidence score of 0.95. The document contains a clear instruction to 'cesar y desistir de contactarme' (cease and desist from contacting me) by any means of communication, which is a strong indication of a Cease & Desist request. The key phrases listed appear in the text and support the classification.", "error": ""}
+2026-06-05 15:12:26 | INFO | Extracting text from: notice_2.pdf
+2026-06-05 15:12:26 | INFO | Falling back to OCR for scanned document
+2026-06-05 15:12:26 | ERROR | OCR failed: Unable to get page count. Is poppler installed and in PATH?
+2026-06-05 15:12:26 | INFO | Classifying document: notice_2.pdf
+2026-06-05 15:12:27 | INFO | Classification: irrelevant (confidence=1.00)
+2026-06-05 15:12:27 | INFO | Reviewer agent running
+2026-06-05 15:12:27 | INFO | ArchiveAgent processing: notice_2.pdf
+2026-06-05 15:12:27 | INFO | Archived irrelevant doc: notice_2.pdf
+2026-06-05 15:12:27 | SUCCESS | Archived: notice_2.pdf
+2026-06-05 15:12:27 | INFO | AuditAgent logging: notice_2.pdf
+2026-06-05 15:12:27 | INFO | AUDIT | {"timestamp": "2026-06-05T09:42:27.713132", "document_name": "notice_2.pdf", "classification": "irrelevant", "confidence_score": 1.0, "reasoning": "The document is empty and does not contain any text.", "detected_language": "unknown", "human_decision": null, "review_notes": "", "error": ""}
+2026-06-06 12:03:38 | INFO | Extracting text from: notice_2.pdf
+2026-06-06 12:03:38 | INFO | pdfplumber yielded little text, trying pypdf...
+2026-06-06 12:03:38 | INFO | Native extraction insufficient, falling back to OCR...
+2026-06-06 12:03:38 | INFO | Running OCR on PDF pages...
+2026-06-06 12:03:42 | INFO | OCR page 1: 1285 chars extracted
+2026-06-06 12:03:42 | INFO | Classifying document: notice_2.pdf
+2026-06-06 12:03:42 | INFO | Classification: cease (confidence=0.92)
+2026-06-06 12:03:42 | INFO | Reviewer agent running
+2026-06-06 12:03:43 | INFO | CeaseAgent processing: notice_2.pdf
+2026-06-06 12:03:43 | INFO | DB record created: id=4 doc=notice_2.pdf
+2026-06-06 12:03:43 | SUCCESS | Cease record saved. DB id=4
+2026-06-06 12:03:43 | INFO | AuditAgent logging: notice_2.pdf
+2026-06-06 12:03:43 | INFO | AUDIT | {"timestamp": "2026-06-06T06:33:43.324302", "document_name": "notice_2.pdf", "classification": "cease", "confidence_score": 0.92, "reasoning": "The document is a formal request from a law firm to suspend communications with their client due to concerns over authorization and identity validation, which aligns with the characteristics of a Cease & Desist request. The language used, such as 'temporary suspension of certain outbound correspondences' and 'absent demonstrable authority to proceed', indicates a clear intent to halt direct communication.", "detected_language": "en", "human_decision": null, "review_notes": "", "error": ""}
+2026-06-06 12:04:12 | INFO | Extracting text from: notice_1.pdf
+2026-06-06 12:04:12 | INFO | pdfplumber yielded little text, trying pypdf...
+2026-06-06 12:04:12 | INFO | Native extraction insufficient, falling back to OCR...
+2026-06-06 12:04:12 | INFO | Running OCR on PDF pages...
+2026-06-06 12:04:15 | INFO | OCR page 1: 1510 chars extracted
+2026-06-06 12:04:15 | INFO | Classifying document: notice_1.pdf
+2026-06-06 12:04:16 | INFO | Classification: cease (confidence=0.92)
+2026-06-06 12:04:16 | INFO | Reviewer agent running
+2026-06-06 12:04:16 | INFO | CeaseAgent processing: notice_1.pdf
+2026-06-06 12:04:16 | INFO | DB record created: id=5 doc=notice_1.pdf
+2026-06-06 12:04:16 | SUCCESS | Cease record saved. DB id=5
+2026-06-06 12:04:16 | INFO | AuditAgent logging: notice_1.pdf
+2026-06-06 12:04:16 | INFO | AUDIT | {"timestamp": "2026-06-06T06:34:16.758136", "document_name": "notice_1.pdf", "classification": "cease", "confidence_score": 0.92, "reasoning": "The document explicitly requests a stop to specific outreach modes and demands verification of the legal basis for continuing communications, indicating a clear intent to cease certain communications.", "detected_language": "en", "human_decision": null, "review_notes": "", "error": ""}
+2026-06-06 12:04:32 | INFO | Extracting text from: notice_4.pdf
+2026-06-06 12:04:32 | INFO | pdfplumber yielded little text, trying pypdf...
+2026-06-06 12:04:32 | INFO | Native extraction insufficient, falling back to OCR...
+2026-06-06 12:04:32 | INFO | Running OCR on PDF pages...
+2026-06-06 12:04:35 | INFO | OCR page 1: 1184 chars extracted
+2026-06-06 12:04:35 | INFO | Classifying document: notice_4.pdf
+2026-06-06 12:04:35 | INFO | Classification: cease (confidence=0.92)
+2026-06-06 12:04:35 | INFO | Reviewer agent running
+2026-06-06 12:04:36 | INFO | CeaseAgent processing: notice_4.pdf
+2026-06-06 12:04:36 | INFO | DB record created: id=6 doc=notice_4.pdf
+2026-06-06 12:04:36 | SUCCESS | Cease record saved. DB id=6
+2026-06-06 12:04:36 | INFO | AuditAgent logging: notice_4.pdf
+2026-06-06 12:04:36 | INFO | AUDIT | {"timestamp": "2026-06-06T06:34:36.446095", "document_name": "notice_4.pdf", "classification": "cease", "confidence_score": 0.92, "reasoning": "The document explicitly requests the cessation of non-essential communications until the matter is clarified, indicating a clear intent to stop further outreach, which is a key characteristic of a Cease & Desist request.", "detected_language": "en", "human_decision": null, "review_notes": "The classification as 'cease' appears to be correct, with a high confidence score of 0.92. The key phrases listed are present in the text snippet and support the classification. The text explicitly requests the cessation of non-essential communications until the matter is clarified, which aligns with the characteristics of a Cease & Desist request.", "error": ""}
+2026-06-06 12:05:17 | INFO | Extracting text from: bw_doc_3.pdf
+2026-06-06 12:05:17 | INFO | pdfplumber yielded little text, trying pypdf...
+2026-06-06 12:05:17 | INFO | Native extraction insufficient, falling back to OCR...
+2026-06-06 12:05:17 | INFO | Running OCR on PDF pages...
+2026-06-06 12:05:20 | INFO | OCR page 1: 1133 chars extracted
+2026-06-06 12:05:20 | INFO | Classifying document: bw_doc_3.pdf
+2026-06-06 12:05:21 | INFO | Classification: irrelevant (confidence=0.95)
+2026-06-06 12:05:21 | INFO | Reviewer agent running
+2026-06-06 12:05:21 | INFO | ArchiveAgent processing: bw_doc_3.pdf
+2026-06-06 12:05:21 | INFO | Archived irrelevant doc: bw_doc_3.pdf
+2026-06-06 12:05:21 | SUCCESS | Archived: bw_doc_3.pdf
+2026-06-06 12:05:21 | INFO | AuditAgent logging: bw_doc_3.pdf
+2026-06-06 12:05:21 | INFO | AUDIT | {"timestamp": "2026-06-06T06:35:21.891324", "document_name": "bw_doc_3.pdf", "classification": "irrelevant", "confidence_score": 0.95, "reasoning": "The document is a request for document production for a compliance audit, which has no relation to a Cease & Desist request, as it does not ask to stop any direct communication with a customer.", "detected_language": "en", "human_decision": null, "review_notes": "", "error": ""}
+2026-06-06 12:05:43 | INFO | Extracting text from: bw_doc_4.pdf
+2026-06-06 12:05:43 | INFO | pdfplumber yielded little text, trying pypdf...
+2026-06-06 12:05:43 | INFO | Native extraction insufficient, falling back to OCR...
+2026-06-06 12:05:43 | INFO | Running OCR on PDF pages...
+2026-06-06 12:05:46 | INFO | OCR page 1: 1132 chars extracted
+2026-06-06 12:05:46 | INFO | Classifying document: bw_doc_4.pdf
+2026-06-06 12:05:46 | INFO | Classification: irrelevant (confidence=0.95)
+2026-06-06 12:05:46 | INFO | Reviewer agent running
+2026-06-06 12:05:47 | INFO | ArchiveAgent processing: bw_doc_4.pdf
+2026-06-06 12:05:47 | INFO | Archived irrelevant doc: bw_doc_4.pdf
+2026-06-06 12:05:47 | SUCCESS | Archived: bw_doc_4.pdf
+2026-06-06 12:05:47 | INFO | AuditAgent logging: bw_doc_4.pdf
+2026-06-06 12:05:47 | INFO | AUDIT | {"timestamp": "2026-06-06T06:35:47.099360", "document_name": "bw_doc_4.pdf", "classification": "irrelevant", "confidence_score": 0.95, "reasoning": "The document is a request for information and guidance on guardianship arrangements and has no mention of stopping communication or ceasing contact.", "detected_language": "en", "human_decision": null, "review_notes": "", "error": ""}
+2026-06-06 12:20:43 | INFO | Extracting text from: LOA3.pdf
+2026-06-06 12:20:43 | INFO | Classifying document: LOA3.pdf
+2026-06-06 12:20:44 | INFO | Classification: cease (confidence=0.90)
+2026-06-06 12:20:44 | INFO | Reviewer agent running
+2026-06-06 12:20:44 | INFO | CeaseAgent processing: LOA3.pdf
+2026-06-06 12:20:44 | INFO | DB record created: id=7 doc=LOA3.pdf
+2026-06-06 12:20:44 | SUCCESS | Cease record saved. DB id=7
+2026-06-06 12:20:44 | INFO | AuditAgent logging: LOA3.pdf
+2026-06-06 12:20:44 | INFO | AUDIT | {"timestamp": "2026-06-06T06:50:44.849310", "document_name": "LOA3.pdf", "classification": "cease", "confidence_score": 0.9, "reasoning": "The document explicitly states 'Cease and desist all communications regarding this account' and demands that all communications be directed exclusively to the client's agent, indicating a clear intention to stop all direct communication.", "detected_language": "en", "human_decision": null, "review_notes": "The classification as 'cease' is correct, with a confidence score of 0.9. The document explicitly states 'Cease and desist all communications regarding this account' and demands that all communications be directed exclusively to the client's agent, which aligns with the classification and key phrases provided.", "error": ""}
+2026-06-06 12:21:32 | INFO | Extracting text from: notice_2.pdf
+2026-06-06 12:21:32 | INFO | pdfplumber yielded little text, trying pypdf...
+2026-06-06 12:21:32 | INFO | Native extraction insufficient, falling back to OCR...
+2026-06-06 12:21:32 | INFO | Running OCR on PDF pages...
+2026-06-06 12:21:36 | INFO | OCR page 1: 1285 chars extracted
+2026-06-06 12:21:36 | INFO | Classifying document: notice_2.pdf
+2026-06-06 12:21:37 | INFO | Classification: uncertain (confidence=0.60)
+2026-06-06 12:21:37 | INFO | Reviewer agent running
+2026-06-06 12:23:08 | INFO | Extracting text from: notice_2.pdf
+2026-06-06 12:23:08 | INFO | pdfplumber yielded little text, trying pypdf...
+2026-06-06 12:23:08 | INFO | Native extraction insufficient, falling back to OCR...
+2026-06-06 12:23:08 | INFO | Running OCR on PDF pages...
+2026-06-06 12:23:12 | INFO | OCR page 1: 1285 chars extracted
+2026-06-06 12:23:12 | INFO | Classifying document: notice_2.pdf
+2026-06-06 12:23:13 | INFO | Classification: uncertain (confidence=0.60)
+2026-06-06 12:23:13 | INFO | Reviewer agent running
+2026-06-06 13:01:02 | INFO | Extracting text from: notice_2.pdf
+2026-06-06 13:01:02 | INFO | pdfplumber yielded little text, trying pypdf...
+2026-06-06 13:01:02 | INFO | Native extraction insufficient, falling back to OCR...
+2026-06-06 13:01:02 | INFO | Running OCR on PDF pages...
+2026-06-06 13:01:10 | INFO | OCR page 1: 1285 chars extracted
+2026-06-06 13:01:10 | INFO | Classifying document: notice_2.pdf
+2026-06-06 13:01:11 | INFO | Classification: uncertain (confidence=0.60)
+2026-06-06 13:01:11 | INFO | Reviewer agent running
+2026-06-06 13:02:35 | INFO | Extracting text from: 
+2026-06-06 13:02:35 | INFO | Reviewer agent running
+2026-06-06 14:00:30 | INFO | Extracting text from: LOA3.pdf
+2026-06-06 14:00:31 | INFO | Classifying document: LOA3.pdf
+2026-06-06 14:00:32 | INFO | Classification: cease (confidence=0.90)
+2026-06-06 14:00:32 | INFO | Reviewer agent running
+2026-06-06 14:00:32 | INFO | CeaseAgent processing: LOA3.pdf
+2026-06-06 14:00:32 | INFO | DB record created: id=8 doc=LOA3.pdf
+2026-06-06 14:00:32 | SUCCESS | Cease record saved. DB id=8
+2026-06-06 14:00:32 | INFO | AuditAgent logging: LOA3.pdf
+2026-06-06 14:00:32 | INFO | AUDIT | {"timestamp": "2026-06-06T08:30:32.782271", "document_name": "LOA3.pdf", "classification": "cease", "confidence_score": 0.9, "reasoning": "The document explicitly states 'Cease and desist all communications regarding this account' and demands that all communications be directed exclusively to the client's agent, indicating a clear intention to stop all direct communication.", "detected_language": "en", "human_decision": null, "review_notes": "", "error": ""}
+2026-06-06 14:01:12 | INFO | Extracting text from: notice_2.pdf
+2026-06-06 14:01:12 | INFO | pdfplumber yielded little text, trying pypdf...
+2026-06-06 14:01:12 | INFO | Native extraction insufficient, falling back to OCR...
+2026-06-06 14:01:12 | INFO | Running OCR on PDF pages...
+2026-06-06 14:01:21 | INFO | OCR page 1: 1285 chars extracted
+2026-06-06 14:01:21 | INFO | Classifying document: notice_2.pdf
+2026-06-06 14:01:22 | INFO | Classification: uncertain (confidence=0.60)
+2026-06-06 14:01:22 | INFO | Reviewer agent running
+2026-06-06 14:01:56 | INFO | Extracting text from: 
+2026-06-06 14:01:56 | INFO | Reviewer agent running
+2026-06-06 14:05:28 | INFO | Extracting text from: LOA3.pdf
+2026-06-06 14:05:28 | INFO | Classifying document: LOA3.pdf
+2026-06-06 14:05:29 | INFO | Classification: cease (confidence=0.90)
+2026-06-06 14:05:29 | INFO | Reviewer agent running
+2026-06-06 14:05:30 | INFO | CeaseAgent processing: LOA3.pdf
+2026-06-06 14:05:30 | INFO | DB record created: id=9 doc=LOA3.pdf
+2026-06-06 14:05:30 | SUCCESS | Cease record saved. DB id=9
+2026-06-06 14:05:30 | INFO | AuditAgent logging: LOA3.pdf
+2026-06-06 14:05:30 | INFO | AUDIT | {"timestamp": "2026-06-06T08:35:30.230698", "document_name": "LOA3.pdf", "classification": "cease", "confidence_score": 0.9, "reasoning": "The document explicitly states 'Cease and desist all communications regarding this account' and demands that all communications be directed to the client's attorney, indicating a clear intention to stop direct communication.", "detected_language": "en", "human_decision": null, "review_notes": "The classification as 'cease' is correct, with a confidence score of 0.9. The document explicitly states 'Cease and desist all communications regarding this account' and includes key phrases such as 'do not contact me', which aligns with the classification. The text does not contain contradictory signals, and the language appears to be handled well by the classifier.", "error": ""}
+2026-06-06 14:06:45 | INFO | Extracting text from: notice_2.pdf
+2026-06-06 14:06:45 | INFO | pdfplumber yielded little text, trying pypdf...
+2026-06-06 14:06:45 | INFO | Native extraction insufficient, falling back to OCR...
+2026-06-06 14:06:45 | INFO | Running OCR on PDF pages...
+2026-06-06 14:06:54 | INFO | OCR page 1: 1285 chars extracted
+2026-06-06 14:06:54 | INFO | Classifying document: notice_2.pdf
+2026-06-06 14:06:55 | INFO | Classification: uncertain (confidence=0.60)
+2026-06-06 14:06:55 | INFO | Reviewer agent running
+2026-06-06 14:07:44 | INFO | Extracting text from: 
+2026-06-06 14:07:44 | INFO | Reviewer agent running
